@@ -216,9 +216,7 @@ li a:hover {
   padding-left: 5%;
   padding-top: 7%;
   height: 300px;
-  position: relative;
-  opacity: 0;
-  transition: opacity 0.5s ease;
+  
 }
 .image2 img.animate{
   opacity: 1;
