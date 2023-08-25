@@ -1,0 +1,406 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif, 'Times New Roman', Times, serif;
+  line-height: 1.5;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1.5rem;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo img {
+  max-width: 100px;
+  height: auto;
+}
+@font-face {
+  font-family: Zodiac;
+  src: url(Zodiak-Thin.otf);
+}
+
+.logo .name {
+  font-family: Zodiac,Georgia, Courier, monospace;
+  font-weight: bold;
+  font-size: 0.5rem;
+  margin-left: 0.5rem;
+  padding-top: 70px;
+  color: white;
+  font-weight: bolder;
+}
+.navbar{
+ display: flex;
+ flex-direction: column;
+}
+.navbar .menu-icon{
+  padding-top: 2%;
+  font-size: 21px;
+  color: #fdc500;
+}
+.navbar .menu-icon:hover{
+  color: #f8f9fa;
+}
+.navbar .user a{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color:#fdc500;
+  margin-left: 90%;
+  margin-top: 0;
+}
+.navbar .user a:hover{
+  color: #f8f9fa;
+}
+.navbar  ul {
+  display: flex;
+  list-style: none;
+}
+@font-face {
+  font-family:chillax ;
+  src: url(Chillax-Light.otf);
+}
+.navbar ul li {
+  margin-top: 15px;
+  padding: 0.5rem;
+  font-size: 1.3rem;
+  font-family: chillax,Arial, Helvetica, sans-serif;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #f8f9fa;
+  padding: 10px 5px;
+}
+
+.navbar  ul li a:hover {
+  text-decoration: none;
+  border-bottom: 2px solid #fdc500;
+}
+/*menu*/
+.navbar ul.menu.active {
+  display: block; /* or any other desired display value */
+}
+
+.navbar .menu-icon{
+  display: none;
+}
+
+.body {
+  background: #034078;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  height: 120vh;
+}
+
+.content {
+  padding: 2rem 1.5rem;
+  text-align: center;
+  margin-top: 110px;
+}
+
+.content h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fdc500;
+}
+@font-face {
+  font-family: sand;
+  src: url(Quicksand-SemiBold.otf);
+}
+.content p {
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  color: white;
+  font-family: sand;
+}
+
+.btn {
+  margin-top: 2.5rem;
+}
+
+.btn a {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.btn a:hover {
+  background-color: #fdc500;
+  color: black;
+}
+
+.message1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7%;
+  position: relative;
+  overflow: hidden;
+  
+}
+
+.quote1 {
+  flex: 1;
+  padding: 20px;
+  text-align: justify;
+  max-width: 50%;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.visible {
+opacity: 1;
+}
+.drop-animation {
+  opacity: 0;
+  transition: opacity 0.5s;
+  transform: translateY(-100%);
+  animation: dropAnimation 1s forwards;
+  font-style: italic;
+  color: black;
+  letter-spacing: 0.01rem;
+  word-spacing: 0.1rem;
+}
+.visible {
+opacity: 1;
+}
+@keyframes dropAnimation {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.quote1 p{
+  color: black;
+  font-weight:bolder;
+  font-size: 17px;
+  padding-top: 50px;
+  font-family: chillax;
+}
+
+.image1 img {
+  flex: 1;
+  max-width: 100%;
+  height: 300px;
+  padding: 20px;
+  border-radius: 50%;
+ 
+}
+.footerr {
+  background-color:  #034078;
+  padding: 20px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  min-height: 30vh;
+  margin-top: 20%;
+  border-radius: 0.5rem;
+}
+
+.footer {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-title {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo {
+  margin-right: 10px;
+}
+.footer-logo a img{
+  height: 150px;
+  height: 150px;
+}
+.school-name {
+  font-size: 20px;
+  font-family: Zodiac;
+}
+
+.footer-nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-nav li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer-nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: sand;
+}
+
+.copy-rights {
+  text-align: center;
+  font-size: 14px;
+  margin-top: auto;
+}
+@font-face {
+  font-family: moto;
+  src: url(Kalam-Light.otf);
+}
+.moto {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 20px;
+  font-family: moto;
+  color: #fdc500;
+}
+
+
+
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    margin:0 !important;
+    padding:0 !important;
+    display: flex;
+    flex-direction: column;
+  }
+  .logo a img{
+      height: 100px;
+
+  }
+  .logo .name{
+    font-size: 10px !important;
+
+  }
+  .navbar{
+    display: flex !important;
+    flex-direction: row;
+    align-items: center !important;
+    justify-content:space-between !important;
+  }
+  .navbar .menu-icon{
+    display: flex;
+    padding-left: 30px;
+    font-size: 40px;
+  }
+  .navbar .user a{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+  }
+  .navbar ul {
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  .navbar li {
+    padding: 0.5rem 0;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .logo .name {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-left: 0;
+    padding-top: 0;
+  }
+  .navbar .menu {
+   display: none;
+  }
+
+  .body {
+    background-position: center;
+    height: auto;
+  }
+
+  .content {
+    margin-top: 5rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .btn a {
+    font-size: 1rem;
+  }
+  .section-1 {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+  }
+  .message1 {
+    flex-direction: column;
+    margin-bottom: 2rem;
+    margin-right: 0;
+  }
+
+  .quote1 {
+    max-width: 100%;
+    font-size: 0.5rem;
+    word-spacing: -0.1rem;
+  }
+  .quote1 h2{
+    max-width: 100%;
+    font-size: 1rem;
+    word-spacing: -0.1rem;
+  }
+  .image1 img {
+    margin-top: 2rem;
+    margin-left:0;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-title {
+    text-align: center;
+  }
+  .school-name {
+    margin-top: 10px;
+    text-align: center;
+  }
+  .footer-nav {
+    text-align: center;
+  }
+  .copy-rights {
+    text-align: center;
+  }
+}

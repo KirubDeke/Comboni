@@ -1,0 +1,422 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif, 'Times New Roman', Times, serif;
+  line-height: 1.5;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1.5rem;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo img {
+  max-width: 100px;
+  height: auto;
+}
+@font-face {
+  font-family: Zodiac;
+  src: url(Zodiak-Thin.otf);
+}
+
+.logo .name {
+  font-family:Zodiac, Georgia, Courier, monospace;
+  font-weight: bold;
+  font-size: 0.5rem;
+  margin-left: 0.5rem;
+  padding-top: 70px;
+  color:white ;
+  font-weight: bolder;
+}
+.navbar{
+  display: flex;
+  flex-direction: column;
+ }
+ .navbar .menu-icon{
+   padding-top: 2%;
+   font-size: 21px;
+   color: #fdc500;
+ }
+ .navbar .menu-icon:hover{
+   color: #f8f9fa;
+ }
+ .navbar .user a{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color:#fdc500;
+  margin-left: 90%;
+  margin-top: 0;
+}
+.navbar .user a:hover{
+  color: #f8f9fa;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+@font-face {
+  font-family:chillax ;
+  src: url(Chillax-Light.otf);
+}
+.navbar li {
+  margin-top: 15px;
+  padding: 0.5rem;
+  font-size: 1.3rem;
+  font-family: chillax,Arial, Helvetica, sans-serif;
+}
+
+li a {
+  text-decoration: none;
+  color:#f8f9fa;
+  padding: 10px 5px;
+}
+
+li a:hover {
+  text-decoration: none;
+  border-bottom: 2px solid #fdc500;
+
+}
+.navbar ul.menu.active {
+  display: block; 
+}
+
+.navbar .menu-icon{
+  display: none;
+}
+
+
+.body {
+  background:  #034078;
+  height: 60vh;
+}
+.content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+  color: #fdc500;
+  font-family: sand;
+}
+.section1{
+  margin-top: 20vh;
+  display: flex;
+  justify-content: space-around;
+}
+.vision{
+  padding-left: 10%;
+  max-width: 50%;
+  text-align: justify;
+  position: relative;
+  opacity: 0;
+  transition:opacity 0.5s ease ;
+ 
+}
+.vision.animate{
+  opacity: 1;
+  animation: slideLeft 1s linear;
+}
+@keyframes slideLeft{
+  0%{
+    right: -100%;
+  }
+  100%{
+    right: 0;
+  }
+}
+.vision p{
+  padding-top: 10px;
+  font-family: sand;
+}
+.vision h3{
+  padding-top: 100px;
+  color: #034078;
+}
+.image1 img{
+    width: 95%;
+    padding-left: 5%;
+    height: 300px;
+    position: relative;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+
+}
+.image1 img.animate{
+  opacity: 1;
+  animation: slideRight 1s linear ;
+}
+@keyframes slideRight{
+  0%{
+    left: -100%;
+  }
+  100%{
+    left: 0;
+  }
+}
+
+.section2{
+  margin-top: 10vh;
+  display: flex;
+  justify-content: space-around;
+}
+.mission{
+  padding-left: 10%;
+  max-width: 50%;
+  text-align: justify;
+  position: relative;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+ 
+}
+.mission.animate {
+  opacity: 1;
+  animation: slideRight 1s linear;
+}
+@keyframes slideRight{
+  0%{
+    left: -100%;
+  }
+  100%{
+    left: 0;
+  }
+}
+.mission ul li::marker{
+ color: #034078;
+}
+.mission ul li{
+  padding-top: 10px;
+  font-family: sand;
+
+}
+.mission p{
+  font-family: sand;
+}
+.mission h3{
+  padding-top: 100px;
+  color: #034078;
+}
+.image2 img{
+   
+  width: 95%;
+  padding-left: 5%;
+  padding-top: 7%;
+  height: 300px;
+  position: relative;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.image2 img.animate{
+  opacity: 1;
+  animation: slideLeft 1s linear ;
+}
+@keyframes slideLeft{
+  0%{
+    right: -100%;
+  }
+  100%{
+    right: 0;
+  }
+}
+
+.footerr {
+  background-color: #034078;
+  padding: 20px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  min-height: 30vh;
+  margin-top: 20%;
+  border-radius: 0.5rem;
+}
+
+.footer {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-title {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo {
+  margin-right: 10px;
+}
+.footer-logo a img{
+  height: 150px;
+  height: 150px;
+}
+.school-name {
+  font-size: 20px;
+  font-family: Zodiac;
+}
+
+.footer-nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-nav li {
+  display: inline-block;
+  margin-right: 10px;
+}
+@font-face {
+  font-family: sand;
+  src: url(Quicksand-SemiBold.otf);
+}
+
+.footer-nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: sand;
+}
+
+.copy-rights {
+  text-align: center;
+  font-size: 14px;
+  margin-top: auto;
+}
+@font-face {
+  font-family: kalam;
+  src: url(Kalam-Light.otf);
+}
+.moto {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 20px;
+  font-family: kalam;
+  color: #fdc500;
+}
+
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    margin:0 !important;
+    padding:0 !important;
+    display: flex;
+    flex-direction: column;
+  }
+  .logo a img{
+      height: 100px;
+
+  }
+  .logo .name{
+    font-size: 10px !important;
+
+  }
+  .navbar{
+    display: flex !important;
+    flex-direction: row;
+    align-items: center !important;
+    justify-content:space-between !important;
+  }
+  .navbar .menu-icon{
+    display: flex;
+    padding-left: 30px;
+    font-size: 40px!important;
+  }
+  .navbar .user a{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  .navbar li {
+    padding: 0.5rem 0;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .logo .name {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-left: 0;
+    padding-top: 0;
+  }
+  .navbar .menu {
+   display: none;
+  }
+  .content h2{
+    margin-top: 20%;
+  }
+  .body{
+    height: auto;
+  }
+
+ .section1{
+  flex-direction: column;
+   
+ }
+ .vision {
+  width: 100%;
+  max-width: 100%;
+}
+
+.vision p {
+  margin: 0;
+  padding-right: 5%;
+}
+
+ .section2{
+  flex-direction: column;
+ }
+ .mission{
+  width: 100%;
+  max-width: 100%;
+}
+.mission ul li {
+  margin: 0;
+  padding-right: 5%;
+}
+ .footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-title {
+  text-align: center;
+}
+.school-name {
+  margin-top: 10px;
+  text-align: center;
+}
+.footer-nav {
+  text-align: center;
+}
+.copy-rights {
+  text-align: center;
+}
+.moto{
+  font-size: 16px;
+
+}
+}

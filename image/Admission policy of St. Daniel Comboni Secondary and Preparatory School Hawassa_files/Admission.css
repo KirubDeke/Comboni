@@ -1,0 +1,158 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    background:  linear-gradient(rgba(51, 204, 51, 0.8),
+    rgba(26, 102, 26, 0.8));
+    height: 60vh;
+}
+
+html {
+    font-size: 16px;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif, 'Times New Roman', Times, serif;
+    line-height: 1.5;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1.5rem;
+  }
+  
+  .logo {
+    display: flex;
+  }
+  
+  .logo img {
+    max-width: 100px;
+    height: auto;
+  }
+  
+  .logo .name {
+    font-family: Georgia, Courier, monospace;
+    font-weight: bold;
+    font-size: 0.5rem;
+    margin-left: 0.5rem;
+    padding-top: 70px;
+    color: white;
+    font-weight: bolder;
+  }
+  
+  .navbar ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  .navbar li {
+    padding: 0.5rem;
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  li a {
+    text-decoration: none;
+    color: #F5F5DC;
+    padding: 10px 5px;
+  }
+  
+  li a:hover {
+    color: black;
+  }
+  .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    color: white;
+  }
+
+  .Admission-policy{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .Admission-policy .title{
+    margin: 50px 50px;
+  }
+
+  .Admission-policy .title a{
+    color: black;
+    text-decoration: none;
+  }
+  .Admission-policy .title span{
+    color: green;
+  }
+  .Admission-policy .Grade ul{
+    display: flex;
+    list-style-type: none;
+    
+  }
+  .Grade ul li{
+    padding: 20px 20px;
+  }
+ .Grade ul li a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: x-large;
+    
+ }
+ .Grade ul li a:hover{
+    color: Green;
+ }
+.Grade9{
+    padding: 100px;
+}
+.Grade9 h2{
+    color: green;
+}
+.Grade9 ul{
+    padding-top: 30px;
+}
+
+
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .logo {
+      margin-bottom: 1rem;
+    }
+  
+    .navbar ul {
+      flex-direction: column;
+      margin-top: 1rem;
+    }
+  
+    .navbar li {
+      padding: 0.5rem 0;
+      font-size: 1.3rem;
+      text-align: center;
+    }
+  
+    .logo .name {
+      font-size: 1.2rem;
+      text-align: center;
+      margin-left: 0;
+      padding-top: 0;
+    }
+   .body{
+    height:100vh;
+   }
+   .Admission-policy,
+   .Grade9 {
+     flex-basis: 50%;
+     padding: 0 10px;
+   }
+   
+  }
+  

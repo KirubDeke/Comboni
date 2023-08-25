@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <title>St. Daniel Comboni Secondary and Preparatory School Hawassa</title>
+    <link rel="stylesheet" href="style/Home.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  
+  </head>
+  <body>
+    <div class="body">
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="Home.html"><img src="image/logo.jfif" alt="logo"></a>
+          <div class="name">
+            <h1>St. Daniel Comboni<br>Hawassa</h1>
+          </div>
+        </div>
+        <nav class="navbar">
+          
+          <div class="user">
+            <a href="UserProfile.html">
+              <i class="fa-solid fa-user fa-2xl"></i>
+            </a>
+          </div>
+    
+
+            <div class="menu-icon">
+              <i class="fas fa-bars"></i>
+            </div>
+          
+          <ul class="menu">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Mission and Vision.html">About Us</a></li>
+            <li><a href="Academics.html">Academics</a></li>
+            <li><a href="Curriculum.html">Curriculum</a></li>
+            <li><a href="Contact Us.html">Contact Us</a></li>
+          </ul>
+         
+        </nav>
+      </div>
+    </header>
+
+    <script>
+           document.addEventListener('DOMContentLoaded', function() {
+           var menuIcon = document.querySelector('.navbar .menu-icon');
+           var menu = document.querySelector('.navbar ul.menu');
+
+           menuIcon.addEventListener('click', function() {
+           menu.classList.toggle('active');
+           });
+          });
+
+    </script>
+
+   
+    <main>
+      <div class="content">
+        <h2>WELCOME TO
+           SAINT DANIEL COMBONI SECONDARY AND PREPARATORY SCHOOL HAWASSA</h2>
+
+        <p>The Comboni Catholic High School was established by the Comboni Missionaries, a Catholic religious inistitute founded by St. Daniel Comboni in 1987. The school was established in 1998 and since become one of the leading high school in Hawassa, providing education to both boys and girls. The school is named after St. Daniel Comboni in honour of his missionary work in Africa.</p>
+        <div class="btn">
+          <a href="Mission and Vision.html">About Us</a>
+        </div>
+      </div>
+    </main>
+    </div>
+
+    <section class="section-1">
+
+    <div class="message1">
+
+      <div class="quote1">
+
+        <h2 class="drop-animation">The regeneration of Africa must be carried
+   out by Africans themselves."<sub><h6>St. Daniel Comboni</h6></sub></h2>
+
+        <p>St. Daniel Comboni believed that education was the key to unlocking the potential of  nation and a tool to take control of one's own destinies. 
+          He saw education as a means of empowering Africans to build strong, self-sufficient communities, and of creating a new generation of leaders who could help to shape the future of the continent.</p>
+
+      </div>
+
+      <div class="image1">
+       <img src="image/Comboni.jpg" alt="Portrait of St. Daniel Comboni">
+      </div>
+
+      </div>
+    
+    </section>
+    <!--javascript animation-->
+    <script>
+      window.addEventListener('scroll', function() {
+var quote = document.querySelector('.quote1 .drop-animation');
+
+var quoteTopPosition = quote.getBoundingClientRect().top;
+var windowHeight = window.innerHeight;
+
+if (quoteTopPosition < windowHeight *0.5) {
+quote.classList.add('visible');
+} 
+});
+</script>
+   <!--javascript animation for h2-->
+   <script>
+    window.addEventListener('scroll', function() {
+  var quote = document.querySelector('.quote1');
+  
+  var quoteTopPosition = quote.getBoundingClientRect().top;
+  var windowHeight = window.innerHeight;
+  
+  if (quoteTopPosition < windowHeight *0.5) {
+    quote.classList.add('visible');
+  } else {
+    quote.classList.remove('visible');
+  }
+});
+    </script>
+
+    <footer class="footerr">
+      <div class="moto">
+        <p>Always more always better for God and our Country</p>
+       </div>
+   
+      <div class="footer">
+          <div class="footer-title">
+            <div class="footer-logo">
+
+              <a href="Home.html"><img src="image/logo.jfif" alt="logo"></a>
+             
+            </div>
+
+              <div class="school-name">
+                 <h4>St. Daniel Comboni<br> Hawassa</h4>
+                </div>
+
+            </div>
+
+            <div class="footer-nav">
+               <ul>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="Contact Us.html">Contact Us</a></li>
+
+                </ul>
+            </div>
+            
+            <div class="copy-rights">
+              <p>© St. Daniel Comboni Hawassa</p>
+          </div>
+      </div>
+     
+
+    </footer>
+
+    
+      
+  </body>
+
+</html>

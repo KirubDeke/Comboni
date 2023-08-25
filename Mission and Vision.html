@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <title>Mission and Vision of St. Daniel Comboni Secondary and Preparatory School Hawassa</title>
+
+    <link rel="stylesheet" href="style/Mission and Vision.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+
+    <div class="body">
+
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="Home.html"><img src="image/logo.jfif" alt="logo"></a>
+          <div class="name">
+            <h1>St. Daniel Comboni<br>Hawassa</h1>
+          </div>
+        </div>
+        <nav class="navbar">
+          <div class="user">
+            <a href="UserProfile.html">
+              <i class="fa-solid fa-user fa-2xl"></i>
+            </a>
+          </div>
+          <div class="menu-icon">
+            <i class="fas fa-bars"></i>
+          </div>
+          <ul class="menu">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Mission and Vision.html">About Us</a></li>
+            <li><a href="Academics.html">Academics</a></li>
+            <li><a href="Curriculum.html">Curriculum</a></li>
+            <li><a href="Contact Us.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+      var menuIcon = document.querySelector('.navbar .menu-icon');
+      var menu = document.querySelector('.navbar ul.menu');
+
+      menuIcon.addEventListener('click', function() {
+      menu.classList.toggle('active');
+      });
+     });
+
+</script>
+
+    <div class="content">
+    <h2>Vision and Mission</h2>
+    </div>
+    </div>
+
+    <section class="section1">
+      <div class="image1">
+        <img src="image/image3.jpeg" alt="image" class="animated-image-1">
+        </div>
+     <div class="vision">
+        <h3>Vision</h3>
+        <p>CSPS strives to be a model of excellence in education fostering the integral growth of young people 
+            through discipline and knowledge, and offering to the society humble and mature citizens who may take
+            an active part in the development of the nation.</p>
+    </div>
+   
+    </section>
+                                  <!--animation for vision-->
+     <script>
+            document.addEventListener("scroll", function () {
+            var vision = document.querySelector(".vision");
+            var visionPosition = vision.getBoundingClientRect().top;
+            var windowHeight = window.innerHeight;
+
+           if (visionPosition - windowHeight <= 0.5) {
+           vision.classList.add("animate");
+         } else {
+            vision.classList.remove("animate");
+         }
+       });
+
+</script>
+
+    <!--animation for image-1-->
+    <script>
+      document.addEventListener("scroll", function () {
+      var image = document.querySelector(".animated-image-1");
+      var imagePosition = image.getBoundingClientRect().top;
+      var windowHeight = window.innerHeight;
+
+       if (imagePosition - windowHeight <= 0.5) {
+      image.classList.add("animate");
+      } else {
+      image.classList.remove("animate");
+      }
+     });
+
+    </script>
+
+    <section class="section2">
+
+        
+        <div class="mission">
+           <h3>Mission</h3>
+           <p>The mission of CSPS is:</p>
+           <br>
+           <ul>
+            <li>Modeling God-fearing citizens</li>
+            <li>Providing quality learning experiences in classroom and in real life encounters</li>
+            <li>Focusing on discipline, knowledge and wisdom</li>
+            </ul>
+       </div>
+       <div class="image2">
+        <img src="image/image3.jpeg" alt="image" class="animated-image-2">
+        </div>
+       
+       </section>
+                           <!--animation for mission-->
+          <script>
+                     document.addEventListener("scroll", function () {
+                     var mission = document.querySelector(".mission");
+                     var missionPosition = mission.getBoundingClientRect().top;
+                     var windowHeight = window.innerHeight;
+
+                    if (missionPosition - windowHeight <= 0.5) {
+                    mission.classList.add("animate");
+                  } else {
+                     mission.classList.remove("animate");
+                  }
+                });
+
+    </script>
+           <!--animation for image-2-->
+    <script>
+      document.addEventListener("scroll", function () {
+      var image = document.querySelector(".animated-image-2");
+      var imagePosition = image.getBoundingClientRect().top;
+      var windowHeight = window.innerHeight;
+
+       if (imagePosition - windowHeight <= 0.5) {
+      image.classList.add("animate");
+      } else {
+      image.classList.remove("animate");
+      }
+     });
+
+    </script>
+
+       <footer class="footerr">
+        <div class="moto">
+          <p>Always more always better for God and our Country</p>
+         </div>
+       <div class="footer">
+        <div class="footer-title">
+          <div class="footer-logo">
+
+            <a href="Home.html"><img src="image/logo.jfif" alt="logo"></a>
+           
+          </div>
+
+            <div class="school-name">
+               <h4>St. Daniel Comboni<br> Hawassa</h4>
+              </div>
+
+          </div>
+
+          <div class="footer-nav">
+             <ul>
+          
+              <li><a href="Gallery.html">Gallery</a></li>
+              <li><a href="Contact Us.html">Contact Us</a></li>
+
+              </ul>
+          </div>
+          
+          <div class="copy-rights">
+            <p>© St. Daniel Comboni Hawassa</p>
+        </div>
+    </div>
+   
+
+  </footer>
+</body>
+</html>
